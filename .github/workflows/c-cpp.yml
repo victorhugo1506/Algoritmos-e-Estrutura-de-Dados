@@ -1,0 +1,35 @@
+name: C/C++ CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout do repositório
+        uses: actions/checkout@v4
+
+      - name: Instalar GCC
+        run: sudo apt-get install -y gcc
+
+      - name: Compilar todos os arquivos .c
+        run: |
+          find . -name "*.c" | while read file; do
+            echo "Compilando: $file"
+            output="${file%.c}.out"
+            gcc -Wall -Wextra -o "$output" "$file" -lm
+            echo "✓ Compilado com sucesso: $output"
+          done
+
+      - name: Executar binários compilados (sem entrada interativa)
+        run: |
+          find . -name "*.out" | while read bin; do
+            echo "Executando: $bin"
+            timeout 5 "$bin" < /dev/null || true
+            echo "---"
+          done
