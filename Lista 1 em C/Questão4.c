@@ -19,5 +19,5 @@ int main(){
         }
     }
     printf("O numero %d aparece %d vezes na lista.\n", imparparaencontrar, contador);
-    return 0;4
+    return 0;
 }
