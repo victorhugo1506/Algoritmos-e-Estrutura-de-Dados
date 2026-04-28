@@ -14,7 +14,7 @@ int main(){
         }
     }
 
-    printf("Vetor com valores repetidos:s ");
+    printf("Vetor com valores repetidos: ");
         for (int i = 0; i < 10; i++) {
             printf("%d ", aux[i]);
         }
