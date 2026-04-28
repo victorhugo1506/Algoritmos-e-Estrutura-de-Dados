@@ -3,28 +3,19 @@
 
 int main(){
     int V[]={9,42,21,14,25,3,19,33,45,6};
-    int maior, segundo_maior, terceiro_maior;
+    int aux = 0;
 
     for(int i=0; i<10; i++){
-        if(i==0){
-            maior = V[i];
-            segundo_maior = V[i];
-            terceiro_maior = V[i];
-        }else{
-            if(V[i]>maior){
-                terceiro_maior = segundo_maior;
-                segundo_maior = maior;
-                maior = V[i];
-            }else if(V[i]>segundo_maior){
-                terceiro_maior = segundo_maior;
-                segundo_maior = V[i];
-            }else if(V[i]>terceiro_maior){
-                terceiro_maior = V[i];
+        for(int j=0; j<10; j++){
+            if(V[i]>V[j]){
+                aux = V[i];
+                V[i] = V[j];
+                V[j] = aux;
             }
         }
     }
-    printf("O maior eh %d, o segundo maior eh %d e o terceiro maior eh %d\n", maior, segundo_maior, terceiro_maior);
-    printf("E seu tempo de execucao eh O(n), porque percorre o vetor apenas uma vez.\n");
+    printf("O maior eh %d, o segundo maior eh %d e o terceiro maior eh %d\n", V[0], V[1], V[2]);
+    printf("E seu tempo de execucao eh O(n^2), porque percorre o vetor duas vezes (uma para cada loop).\n");
     return 0;
 
 }
