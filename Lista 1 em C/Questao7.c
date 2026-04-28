@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 int main(){
-    int V[]= {9, 42, 21, 14, 25, 3, 19, 33, 45, 6};
+    int V[]= {9, 42, 21, 14, 25, 3, 19, 33, 45, 6, 8};
     int contador = 0;
 
     for(int i = 0; i < 10; i++){
