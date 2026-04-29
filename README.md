@@ -63,15 +63,15 @@ Algoritmos-e-Estrutura-de-Dados/
 
 | Questão | C | Python |
 |---------|:-:|:------:|
-| Questão 1 | ✅ | ❌ |
-| Questão 2 | ✅ | ❌ |
-| Questão 3 | ✅ | ❌ |
-| Questão 4 | ✅ | ❌ |
-| Questão 5a | ✅ | ❌ |
-| Questão 5b | ✅ | ❌ |
-| Questão 6 | ✅ | ❌ |
-| Questão 7 | ✅ | ❌ |
-| Questão 8 | ✅ | ❌ |
+| Questão 1 | ✅ | ✅ |
+| Questão 2 | ✅ | ✅ |
+| Questão 3 | ✅ | ✅ |
+| Questão 4 | ✅ | ✅ |
+| Questão 5a | ✅ | ✅ |
+| Questão 5b | ✅ | ✅ |
+| Questão 6 | ✅ | ✅ |
+| Questão 7 | ✅ | ✅ |
+| Questão 8 | ✅ | ✅ |
 
 ### Lista 2
 
