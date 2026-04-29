@@ -12,3 +12,5 @@ for i in range(n):
 
 if not achou:
     print(f"Nao existem elementos repetidos dentro da distancia {k}")
+
+print("O tempo de execucao eh O(n * k), porque percorre o vetor n vezes e para cada elemento, percorre k elementos seguintes.")
