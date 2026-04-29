@@ -22,5 +22,6 @@ int main() {
         printf("Nao existem elementos repetidos dentro da distancia %d\n", k);
     }
 
+    printf("O tempo de execucao eh O(n * k), porque percorre o vetor n vezes e para cada elemento, percorre k elementos seguintes.");
     return 0;
 }
