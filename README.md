@@ -86,6 +86,16 @@ Algoritmos-e-Estrutura-de-Dados/
 | Questão 6 Jeito Diferente | ✅ |  ✅  |
 | Questão 7 | ✅ |  ✅  |
 
+### Lista 3
+
+| Questão | C | Python |
+|---------|:-:|:------:|
+| Questão 1 | ❌ |  ❌  |
+| Questão 2 | ❌ |  ❌  |
+| Questão 3 | ❌ |  ❌  |
+| Questão 4 | ❌ |  ❌  |
+| Questão 5 | ❌ |  ❌  |
+
 > Legenda: ✅ Concluído · ❌ Pendente
 
 ---
