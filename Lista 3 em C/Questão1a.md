@@ -12,7 +12,7 @@ Isso gera a seguinte recorrência:
 T(n) = 2·T(n/2) + O(n)
 ```
 
-Pelo **Teorema Mestre** (caso 2), isso resulta em:
+Onde isso resulta em:
 
 ```math
 T(n) = O(n · log n)
