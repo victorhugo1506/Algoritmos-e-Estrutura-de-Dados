@@ -8,12 +8,11 @@ No melhor caso, o pivô divide o vetor **exatamente ao meio** a cada chamada rec
 
 Isso gera a seguinte recorrência:
 
-```
+```math
 T(n) = 2·T(n/2) + O(n)
 ```
 
-Onde isso resulta em:
+Pelo **Teorema Mestre** (caso 2), isso resulta em:
 
-```
+```math
 T(n) = O(n · log n)
-```
