@@ -1,7 +1,5 @@
 # 📚 Algoritmos e Estrutura de Dados
 
-<div align="center">
-
 ![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)
@@ -10,8 +8,6 @@
 Repositório com resoluções das listas da disciplina de **Algoritmos e Estrutura de Dados**,
 ministrada pelo Prof. Dr. Luiz Henrique Bustamante de Morais.
 
-</div>
-
 ---
 
 ## 📋 Índice
@@ -19,8 +15,8 @@ ministrada pelo Prof. Dr. Luiz Henrique Bustamante de Morais.
 - [Sobre](#-sobre)
 - [Estrutura do Repositório](#-estrutura-do-repositório)
 - [Listas](#-listas)
-- [Como Executar](#-como-executar)
-- [Tecnologias](#-tecnologias)
+- [Como Executar](#️-como-executar)
+- [Tecnologias](#️-tecnologias)
 - [Autor](#-autor)
 
 ---
@@ -33,7 +29,7 @@ Este repositório reúne as soluções das listas de exercícios da disciplina d
 
 ## 📁 Estrutura do Repositório
 
-```
+```text
 Algoritmos-e-Estrutura-de-Dados/
 │
 ├── 📂 Lista 1 em C/
@@ -62,7 +58,7 @@ Algoritmos-e-Estrutura-de-Dados/
 ### Lista 1
 
 | Questão | C | Python |
-|---------|:-:|:------:|
+| ------- | - | ------ |
 | Questão 1 | ✅ | ✅ |
 | Questão 2 | ✅ | ✅ |
 | Questão 3 | ✅ | ✅ |
@@ -76,36 +72,36 @@ Algoritmos-e-Estrutura-de-Dados/
 ### Lista 2
 
 | Questão | C | Python |
-|---------|:-:|:------:|
-| Questão 1 | ✅ |  ✅  |
-| Questão 2 | ✅ |  ✅  |
-| Questão 3 | ✅ |  ✅  |
-| Questão 4 | ✅ |  ✅  |
-| Questão 5 | ✅ |  ✅  |
-| Questão 6 | ✅ |  ✅  |
-| Questão 6 Jeito Diferente | ✅ |  ✅  |
-| Questão 7 | ✅ |  ✅  |
+| ------- | - | ------ |
+| Questão 1 | ✅ | ✅ |
+| Questão 2 | ✅ | ✅ |
+| Questão 3 | ✅ | ✅ |
+| Questão 4 | ✅ | ✅ |
+| Questão 5 | ✅ | ✅ |
+| Questão 6 | ✅ | ✅ |
+| Questão 6 Jeito Diferente | ✅ | ✅ |
+| Questão 7 | ✅ | ✅ |
 
 ### Lista 3
 
 | Questão | C | Python |
-|---------|:-:|:------:|
-| Questão 1 | ✅ |  ❌  |
-| Questão 2 | ✅ |  ❌  |
-| Questão 3 | ✅ |  ❌  |
-| Questão 4 | ❌ |  ❌  |
-| Questão 5 | ❌ |  ❌  |
+| ------- | - | ------ |
+| Questão 1 | ✅ | ✅ |
+| Questão 2 | ✅ | ✅ |
+| Questão 3 | ✅ | ✅ |
+| Questão 4 | ✅ | ✅ |
+| Questão 5 | ✅ | ✅ |
 
 ### Lista 4
 
 | Questão | C | Python |
-|---------|:-:|:------:|
-| Questão 1 | ❌ |  ❌  |
-| Questão 2 | ❌ |  ❌  |
-| Questão 3 | ❌ |  ❌  |
-| Questão 4 | ❌ |  ❌  |
-| Questão 5 | ❌ |  ❌  |
-| Questão 6 | ❌ |  ❌  |
+| ------- | - | ------ |
+| Questão 1 | ✅ | ✅ |
+| Questão 2 | ✅ | ✅ |
+| Questão 3 | ✅ | ✅ |
+| Questão 4 | ✅ | ✅ |
+| Questão 5 | ✅ | ✅ |
+| Questão 6 | ✅ | ✅ |
 
 > Legenda: ✅ Concluído · ❌ Pendente
 
@@ -149,16 +145,10 @@ python Questão1.py
 
 ## 👨‍💻 Autor
 
-<div align="center">
-
-**Victor Hugo Lima Silva**
+### Victor Hugo Lima Silva
 
 [![GitHub](https://img.shields.io/badge/GitHub-victorhugo1506-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/victorhugo1506)
 
-</div>
-
 ---
 
-<div align="center">
-  <sub>Feito com 💙 para a disciplina de Algoritmos e Estrutura de Dados</sub>
-</div>
+Feito com 💙 para a disciplina de Algoritmos e Estrutura de Dados
