@@ -36,7 +36,7 @@ Algoritmos-e-Estrutura-de-Dados/
 │   ├── Aula001.md
 │   ├── Aula002.md
 │   ├── Aula003.md
-│
+│   └── ...
 │
 ├── 📂 Lista 1 em C/
 │   ├── Questão1.c
