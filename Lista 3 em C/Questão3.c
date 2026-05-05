@@ -8,7 +8,7 @@ int main() {
     int inicioU = 0, fimU = n - 1;
     int inicioV = 0, fimV = n - 1;
 
-    while (inicioU < fimU) {
+    while (fimU - inicioU > 1) {
         int meioU = (inicioU + fimU) / 2;
         int meioV = (inicioV + fimV) / 2;
 
@@ -29,9 +29,10 @@ int main() {
     } else {
         mediana = V[inicioV];
     }
+    
 
     printf("A mediana eh: %d\n", mediana);
-    printf("E o tempo de execucao eh O(log n)\n");
+    printf("E o tempo de execucao eh O(log n), pois \n");
 
     return 0;
 }
