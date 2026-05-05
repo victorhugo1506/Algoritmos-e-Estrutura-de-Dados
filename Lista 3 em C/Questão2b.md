@@ -1,11 +1,23 @@
-#Estrutura de Dados
+# Estrutura de Dados
 
-#Questão 2
+## Questão 2
 
-##Letra B:
+### Letra B — Análise de Complexidade
 
-Primeira Ordenação: O(2n/3)
-Segunda Ordenação: O(n^2)
-Terceira Ordenação: O(2n/3)
+Cada uma das três passagens aplica o BubbleSort sobre **2n/3 elementos**. Como o BubbleSort tem complexidade O(m²) para uma entrada de tamanho m, temos:
 
-Portanto, o tempo total é O(n^2)
+| Passagem | Elementos | Complexidade |
+|----------|-----------|--------------|
+| 1ª (posições 1 a 2n/3)   | 2n/3 | O((2n/3)²) = O(n²) |
+| 2ª (posições n/3 a n)    | 2n/3 | O((2n/3)²) = O(n²) |
+| 3ª (posições 1 a 2n/3)   | 2n/3 | O((2n/3)²) = O(n²) |
+
+> **Nota:** O((2n/3)²) = O(4n²/9) = O(n²), pois constantes são ignoradas na notação O.
+
+Somando as três passagens:
+
+```
+O(n²) + O(n²) + O(n²) = O(n²)
+```
+
+Portanto, o tempo total de execução deste procedimento é **O(n²)**.
