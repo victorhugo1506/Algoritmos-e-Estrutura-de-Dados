@@ -32,6 +32,12 @@ Este repositório reúne as soluções das listas de exercícios da disciplina d
 ```text
 Algoritmos-e-Estrutura-de-Dados/
 │
+├── 📂 Conceitos e Revisão/
+│   ├── Aula001.md
+│   ├── Aula002.md
+│   ├── Aula003.md
+│
+│
 ├── 📂 Lista 1 em C/
 │   ├── Questão1.c
 │   ├── Questão2.c
