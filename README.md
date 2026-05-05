@@ -90,11 +90,22 @@ Algoritmos-e-Estrutura-de-Dados/
 
 | Questão | C | Python |
 |---------|:-:|:------:|
+| Questão 1 | ✅ |  ❌  |
+| Questão 2 | ✅ |  ❌  |
+| Questão 3 | ✅ |  ❌  |
+| Questão 4 | ❌ |  ❌  |
+| Questão 5 | ❌ |  ❌  |
+
+### Lista 4
+
+| Questão | C | Python |
+|---------|:-:|:------:|
 | Questão 1 | ❌ |  ❌  |
 | Questão 2 | ❌ |  ❌  |
 | Questão 3 | ❌ |  ❌  |
 | Questão 4 | ❌ |  ❌  |
 | Questão 5 | ❌ |  ❌  |
+| Questão 6 | ❌ |  ❌  |
 
 > Legenda: ✅ Concluído · ❌ Pendente
 
