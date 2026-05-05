@@ -3,12 +3,12 @@
 #define N 10
 
 int main() {
-    int L[N] = {3, 1, 7, 2, 9, 4, 6, 5, 8, 10};
+    int V[N] = {3, 1, 7, 2, 9, 4, 6, 5, 8, 10};
     int k;
 
-    printf("Lista original: ");
+    printf("Vetor original: ");
     for (int i = 0; i < N; i++) {
-        printf("%d ", L[i]);
+        printf("%d ", V[i]);
     }
     printf("\n");
 
@@ -19,24 +19,24 @@ int main() {
     int j = N - 1;
 
     while (i <= j) {
-        if (L[i] < k) {
+        if (V[i] < k) {
             i++;
         } else {
-            int temp = L[i];
-            L[i] = L[j];
-            L[j] = temp;
+            int temp = V[i];
+            V[i] = V[j];
+            V[j] = temp;
             j--;
         }
     }
 
-    printf("Lista apos particao: ");
+    printf("Vetor apos particao: ");
     for (int x = 0; x < N; x++) {
-        printf("%d ", L[x]);
+        printf("%d ", V[x]);
     }
     printf("\n");
 
     printf("Posicao do primeiro elemento maior ou igual a %d: %d\n", k, i + 1);
-    printf("Primeiro elemento maior ou igual a %d: %d\n", k, L[i]);
+    printf("Primeiro elemento maior ou igual a %d: %d\n", k, V[i]);
 
     return 0;
 }
