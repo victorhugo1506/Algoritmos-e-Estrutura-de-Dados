@@ -14,6 +14,5 @@ for num in V:
             print(f"E {dobro_do_numero}, que eh o dobro de {numero_para_procurar}, foi encontrado")
         else:
             print("Mas o seu dobro nao esta na lista")
-        exit()
 
 print("Seu numero nao esta na lista")

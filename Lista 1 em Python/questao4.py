@@ -8,6 +8,5 @@ for num in V:
         contador += 1
     elif num != impar_para_encontrar and num % 2 != 0:
         print(f"O numero {impar_para_encontrar} nao esta presente na lista.")
-        exit()
 
 print(f"O numero {impar_para_encontrar} aparece {contador} vezes na lista.")

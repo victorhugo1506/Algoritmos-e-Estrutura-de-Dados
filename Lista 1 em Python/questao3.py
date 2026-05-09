@@ -8,7 +8,6 @@ menor_distancia = abs(V[0] - numero_para_procurar)
 for num in V:
     if num == numero_para_procurar:
         print(f"O numero {numero_para_procurar} esta presente na lista.")
-        exit()
 
     distancia_atual = abs(num - numero_para_procurar)
     if distancia_atual < menor_distancia:
