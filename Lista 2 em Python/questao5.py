@@ -17,7 +17,6 @@ for num in V:
         break
     else:
         print("Seu numero nao esta no vetor")
-        exit()
 
 print(f"O numero {numero_para_encontrar} aparece {contador} vezes no vetor.")
 print("O tempo de execucao eh O(n^2), porque percorre o vetor duas vezes (uma para cada loop).")
