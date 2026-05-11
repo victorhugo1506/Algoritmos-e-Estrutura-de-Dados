@@ -2,8 +2,8 @@
 
 int main()
 {
-    int V[10] = {1, 3, 5, 7, 9, 11, 13, 15, 17, 19};
-    int n = 10;
+    int V[] = {1, 3, 5, 7, 9, 11, 13, 15, 17, 19};
+    int n = sizeof(V) / sizeof(V[0]);
     int k;
 
     printf("Digite o valor a ser buscado: ");
