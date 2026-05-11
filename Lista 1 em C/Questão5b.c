@@ -36,11 +36,11 @@ int main()
         if (V[i] == (numeroparaprocurar * 2))
         {
             dobrodonumero = V[i];
-            break; // achou o dobro, pode parar
+            break;
         }
         if (V[i] > (numeroparaprocurar * 2))
         {
-            break; // já passou do dobro, inútil continuar
+            break;
         }
     }
 
