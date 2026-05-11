@@ -7,10 +7,12 @@
 # 1. Introdução
 
 Algoritmos `O(n)` podem ser lentos quando:
+
 - a lista é muito grande;
 - muitas buscas são necessárias.
 
 A solução apresentada nesta aula é:
+
 > reduzir drasticamente o número de elementos examinados.
 
 ---
@@ -20,9 +22,11 @@ A solução apresentada nesta aula é:
 ## Ideia Central
 
 Se a lista está ordenada:
+
 - não precisamos examinar todos os elementos.
 
 A estratégia é:
+
 - olhar primeiro para o elemento do meio.
 
 ---
@@ -30,19 +34,22 @@ A estratégia é:
 ## Casos
 
 Se `L[m] == k`
+
 - encontramos o elemento.
 
 Se `L[m] > k`
+
 - continuamos na metade esquerda.
 
 Se `L[m] < k`
+
 - continuamos na metade direita.
 
 ---
 
 ## Pseudocódigo
 
-````pseudo
+```pseudo
 i = 1
 j = n
 
@@ -61,16 +68,18 @@ Enquanto (i <= j)
 }
 
 Retorna NÃO
-````
+```
 
 ---
 
 ## Complexidade
 
 A cada passo:
+
 - a faixa de busca é reduzida pela metade.
 
 Sequência do tamanho:
+
 ```math
 n, \frac{n}{2}, \frac{n}{4}, \frac{n}{8}, ...
 ```
@@ -88,6 +97,7 @@ O(\log_2 n)
 ```
 
 Ou seja:
+
 - apenas cerca de 20 comparações para buscar em 1 milhão de elementos.
 
 ---
@@ -115,19 +125,20 @@ O(n^2)
 ## Ideia
 
 Percorrer a lista:
+
 - trocando elementos vizinhos fora de ordem.
 
 ---
 
 ## Pseudocódigo
 
-````pseudo
+```pseudo
 Para i = 1 até n-1
 {
     Se (L[i] > L[i+1])
         troca(L[i], L[i+1])
 }
-````
+```
 
 ### Complexidade da Varredura
 
@@ -142,6 +153,7 @@ O(n)
 ## Estratégia
 
 Executar várias varreduras:
+
 - até que a lista esteja totalmente ordenada.
 
 ### Complexidade
@@ -157,6 +169,7 @@ O(n^2)
 ## Nova Ideia
 
 Dividir a lista:
+
 - ordenar as metades separadamente;
 - depois juntar as partes ordenadas.
 
@@ -167,10 +180,12 @@ Dividir a lista:
 ## Estratégia
 
 Usar:
+
 - dois ponteiros;
 - uma lista auxiliar.
 
 Sempre copiar:
+
 - o menor elemento disponível.
 
 ### Complexidade
@@ -265,13 +280,13 @@ O(n\sqrt{n})
 
 # 📊 Resumo Geral
 
-| Algoritmo | Complexidade |
-|---|---|
-| Busca Linear | O(n) |
-| Busca Binária | O(log n) |
-| Bubble Sort | O(n²) |
-| Intercalação | O(n) |
-| Estratégia Otimizada | O(n√n) |
+| Algoritmo            | Complexidade |
+| -------------------- | ------------ |
+| Busca Linear         | O(n)         |
+| Busca Binária        | O(log n)     |
+| Bubble Sort          | O(n²)        |
+| Intercalação         | O(n)         |
+| Estratégia Otimizada | O(n√n)       |
 
 ---
 

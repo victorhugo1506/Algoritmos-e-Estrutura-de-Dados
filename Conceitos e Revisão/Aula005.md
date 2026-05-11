@@ -1,4 +1,5 @@
 # Estruturas de Dados
+
 ## Aula 05: Multilistas e Listas Esparsas
 
 ---
@@ -24,11 +25,11 @@ Quanto à remoção:
 
 ### Resumo das complexidades
 
-| Operação   | Lista Desordenada | Lista Ordenada |
-|------------|:-----------------:|:--------------:|
-| Busca      | O(n)              | O(log n)       |
-| Inserção   | O(1)              | O(n)           |
-| Remoção    | O(n)              | O(n)           |
+| Operação | Lista Desordenada | Lista Ordenada |
+| -------- | :---------------: | :------------: |
+| Busca    |       O(n)        |    O(log n)    |
+| Inserção |       O(1)        |      O(n)      |
+| Remoção  |       O(n)        |      O(n)      |
 
 ---
 
@@ -60,11 +61,11 @@ Dividindo em **3 partes**:
 
 Para **k partes**, os tempos ficam:
 
-| Operação  | Tempo (aprox.)        |
-|-----------|-----------------------|
-| Busca     | k · log(n/k)          |
-| Inserção  | n/k                   |
-| Remoção   | k · log(n/k) + n/k    |
+| Operação | Tempo (aprox.)     |
+| -------- | ------------------ |
+| Busca    | k · log(n/k)       |
+| Inserção | n/k                |
+| Remoção  | k · log(n/k) + n/k |
 
 > **Qual é o número de partes ótimo?** Depende do contexto: se há muitas buscas, minimize o tempo de busca; se há muitas inserções/remoções, minimize esses tempos.
 
@@ -78,11 +79,11 @@ L: [ √n ] [ √n ] [ √n ] ...
 
 #### Complexidades da Multilista
 
-| Operação  | Multilista          |
-|-----------|:-------------------:|
-| Busca     | O(√n · log n)       |
-| Inserção  | O(√n)               |
-| Remoção   | O(√n · log n)       |
+| Operação |  Multilista   |
+| -------- | :-----------: |
+| Busca    | O(√n · log n) |
+| Inserção |     O(√n)     |
+| Remoção  | O(√n · log n) |
 
 ---
 
@@ -194,11 +195,13 @@ O pior caso da inserção em lista ordenada ocorre porque as posições vazias e
 Cada posição da lista possui um campo `L[j].vazia`, indicando se está vazia ou não. As posições vazias podem estar em qualquer lugar da lista.
 
 **Remoção:** leva tempo **O(1)** (sem contar a busca) — basta marcar a posição como vazia:
+
 ```
 L[j].vazia = Sim
 ```
 
 **Inserção:** realizada em 4 etapas:
+
 1. Busca binária para localizar a posição de inserção
 2. Localizar a posição vazia mais próxima
 3. Deslocar os elementos até lá, liberando a posição de inserção
@@ -227,6 +230,7 @@ função Inserção-LE(k, L)
 ### Análise do tempo de inserção
 
 O tempo total é composto por:
+
 - Tempo da busca binária
 - Tempo da procura pela posição vazia mais próxima
 - Tempo do deslocamento
@@ -245,4 +249,4 @@ Em média, uma posição vazia é encontrada a cada 10 posições. Nessas condi�
 
 ### 3.1 Busca binária na lista esparsa
 
-*(a ser desenvolvido)*
+_(a ser desenvolvido)_

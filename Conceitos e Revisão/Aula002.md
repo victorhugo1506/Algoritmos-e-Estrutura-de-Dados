@@ -1,4 +1,5 @@
 # Estruturas de Dados
+
 ## Aula 02: Análise de Algoritmos
 
 ---
@@ -46,6 +47,7 @@ Imprime ("O maior elemento é:", M)  // O(1)
 ```
 
 Observações:
+
 - O laço sempre dá **n − 1** voltas
 - Antes e depois do laço existem instruções que são executadas apenas uma vez — `O(1)`
 - O trecho dentro do laço também é executado uma vez a cada volta — `O(1)`
@@ -63,6 +65,7 @@ Esse resultado diz que o tempo de execução do algoritmo é **da ordem de n**, 
 ### a. O Segundo Maior
 
 Tarefa:
+
 > **Encontrar o segundo maior elemento da lista L**
 
 **Versão 1:**
@@ -127,10 +130,10 @@ $$O(1) + n \times O(1) + O(1) = O(n)$$
 
 **Conclusão:**
 
-| Versão | Complexidade |
-|--------|-------------|
-| Versão 1 | O(n) |
-| Versão 2 | O(n) |
+| Versão   | Complexidade |
+| -------- | ------------ |
+| Versão 1 | O(n)         |
+| Versão 2 | O(n)         |
 
 Assumindo que `2·O(n)` e `O(n)` são equivalentes na análise, os dois algoritmos são **igualmente eficientes**. Ambos executam em tempo proporcional ao tamanho da lista.
 
@@ -139,6 +142,7 @@ Assumindo que `2·O(n)` e `O(n)` são equivalentes na análise, os dois algoritm
 ### b. Busca
 
 Tarefa:
+
 > **Verificar se o número x está na lista L ou não**
 
 ```
@@ -173,10 +177,10 @@ No **pior caso**, os laços de ambos os algoritmos realizam **n voltas**.
 
 **Conclusão:**
 
-| Caso | Complexidade |
-|------|-------------|
-| Não ordenado | O(n) |
-| Ordenado | O(n) |
+| Caso         | Complexidade |
+| ------------ | ------------ |
+| Não ordenado | O(n)         |
+| Ordenado     | O(n)         |
 
 O ganho de eficiência do caso ordenado não aparece nesta análise, o que pode ser interpretado como uma limitação do método. Por outro lado, pode-se argumentar que **ganhos de eficiência só são significativos se aparecem na análise**.
 
@@ -185,6 +189,7 @@ O ganho de eficiência do caso ordenado não aparece nesta análise, o que pode 
 ### c. Elemento Repetido
 
 Tarefa:
+
 > **Verificar se a lista contém algum elemento repetido**
 
 ```
@@ -220,6 +225,7 @@ Como `O(n²/2) = O(n²)`, o resultado se confirma.
 ### d. Par de Elementos com Soma k
 
 Tarefa:
+
 > **Verificar se existem dois elementos na lista cuja soma é igual a k**
 
 **Caso não ordenado:**
@@ -262,10 +268,10 @@ $$O(1) + O(n) \times O(1) + O(1) = O(n)$$
 
 **Conclusão:**
 
-| Caso | Complexidade |
-|------|-------------|
-| Não ordenado | O(n²) |
-| Ordenado | O(n) |
+| Caso         | Complexidade |
+| ------------ | ------------ |
+| Não ordenado | O(n²)        |
+| Ordenado     | O(n)         |
 
 Este é um primeiro exemplo onde o algoritmo para o **caso ordenado é significativamente mais eficiente**.
 
@@ -274,6 +280,7 @@ Este é um primeiro exemplo onde o algoritmo para o **caso ordenado é significa
 ### e. Trabalhando com Duas Listas
 
 Sejam L1 e L2 duas listas de tamanho n. Tarefa:
+
 > **Contar quantos elementos de L1 são maiores que todos os elementos de L2**
 
 **Primeira versão:**
@@ -322,9 +329,9 @@ $$O(1) + n \cdot O(1) + O(1) + n \cdot O(1) + O(1) = O(n)$$
 
 **Conclusão:**
 
-| Versão | Complexidade |
-|--------|-------------|
-| Primeira versão | O(n²) |
-| Versão inteligente | O(n) |
+| Versão             | Complexidade |
+| ------------------ | ------------ |
+| Primeira versão    | O(n²)        |
+| Versão inteligente | O(n)         |
 
 A versão inteligente é **realmente bem mais eficiente**.

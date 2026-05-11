@@ -22,11 +22,13 @@ Nesta aula veremos:
 ## Caso Desordenado
 
 ### Objetivo
+
 > Remover elementos repetidos de uma lista.
 
 ### Ideia
 
 Para cada elemento da lista:
+
 - verificar se ele já apareceu antes;
 - se apareceu, marcar com `0`;
 - depois mover todos os `0` para o final.
@@ -43,6 +45,7 @@ O(n^2)
 ```
 
 Porque:
+
 - para cada elemento, percorremos boa parte da lista novamente.
 
 ---
@@ -52,10 +55,12 @@ Porque:
 ### Ideia Inteligente
 
 Se a lista está ordenada:
+
 - basta comparar o elemento atual com o anterior;
 - se forem iguais, encontramos uma duplicata imediatamente.
 
 Depois:
+
 - zeramos duplicatas;
 - movemos os zeros para o final.
 
@@ -67,10 +72,10 @@ O(n)
 
 ### Conclusão
 
-| Caso | Complexidade |
-|---|---|
-| Desordenado | O(n²) |
-| Ordenado | O(n) |
+| Caso        | Complexidade |
+| ----------- | ------------ |
+| Desordenado | O(n²)        |
+| Ordenado    | O(n)         |
 
 ---
 
@@ -87,6 +92,7 @@ O(n)
 ### Estratégia
 
 Para cada elemento de `U`:
+
 - procurar esse elemento em `V`.
 
 ### Complexidade
@@ -102,6 +108,7 @@ O(n^2)
 ### Estratégia
 
 Usar dois ponteiros:
+
 - um em cada lista;
 - comparar os elementos atuais;
 - avançar o ponteiro do menor elemento.
@@ -114,10 +121,10 @@ O(n)
 
 ### Conclusão
 
-| Caso | Complexidade |
-|---|---|
-| Desordenado | O(n²) |
-| Ordenado | O(n) |
+| Caso        | Complexidade |
+| ----------- | ------------ |
+| Desordenado | O(n²)        |
+| Ordenado    | O(n)         |
 
 ---
 
@@ -128,6 +135,7 @@ O(n)
 ### Estratégia
 
 Inserir o elemento:
+
 - diretamente na primeira posição vazia.
 
 ### Complexidade
@@ -155,6 +163,7 @@ O(n)
 ### Conclusão
 
 Neste caso:
+
 - a versão desordenada é mais rápida.
 
 ---
@@ -192,10 +201,10 @@ O(n)
 
 ### Conclusão
 
-| Caso | Complexidade |
-|---|---|
-| Desordenado | O(n) |
-| Ordenado | O(n) |
+| Caso        | Complexidade |
+| ----------- | ------------ |
+| Desordenado | O(n)         |
+| Ordenado    | O(n)         |
 
 ---
 
@@ -208,9 +217,11 @@ O(n)
 ### Observação
 
 Se a lista está ordenada:
+
 - atualizar pode quebrar a ordenação.
 
 Então:
+
 - se `y < x`, talvez seja necessário mover o elemento para a esquerda;
 - se `y > x`, talvez seja necessário mover o elemento para a direita.
 
@@ -237,13 +248,16 @@ A primeira metade e a segunda metade da lista já estão ordenadas.
 ## Estratégia
 
 Usar:
+
 - dois ponteiros;
 - uma lista auxiliar.
 
 A cada passo:
+
 - copiar o menor elemento para a lista auxiliar.
 
 Depois:
+
 - copiar os elementos de volta.
 
 ### Complexidade
@@ -281,10 +295,12 @@ O(n^2)
 ## Ideia
 
 Escolher um pivô `k`:
+
 - elementos menores ficam à esquerda;
 - elementos maiores ficam à direita.
 
 Depois:
+
 - ordenar cada lado separadamente.
 
 ---
@@ -292,17 +308,19 @@ Depois:
 ## Estratégia
 
 Usar dois ponteiros:
+
 - `i` procura elementos maiores que `k`;
 - `j` procura elementos menores que `k`.
 
 Quando ambos encontram:
+
 - ocorre troca.
 
 ### Complexidade da Partição
 
-```math
+````math
 O(n)
-```
+```ed
 
 ---
 
@@ -314,7 +332,7 @@ O pivô divide a lista ao meio.
 
 ```math
 \frac{n^2}{2} + n
-```
+````
 
 ---
 
@@ -332,12 +350,12 @@ O pivô vai para uma extremidade.
 
 # 📊 Resumo Geral
 
-| Problema | Lista Ordenada | Lista Desordenada |
-|---|---|---|
-| Remover duplicados | O(n) | O(n²) |
-| Interseção | O(n) | O(n²) |
-| Inserção | O(n) | O(1) |
-| Remoção | O(n) | O(n) |
+| Problema           | Lista Ordenada | Lista Desordenada |
+| ------------------ | -------------- | ----------------- |
+| Remover duplicados | O(n)           | O(n²)             |
+| Interseção         | O(n)           | O(n²)             |
+| Inserção           | O(n)           | O(1)              |
+| Remoção            | O(n)           | O(n)              |
 
 ---
 
