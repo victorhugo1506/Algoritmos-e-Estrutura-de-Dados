@@ -2,12 +2,14 @@
 
 #define N 10
 
-int main() {
+int main()
+{
     int V[N] = {3, 1, 7, 2, 9, 4, 6, 5, 8, 10};
     int k;
 
     printf("Vetor original: ");
-    for (int i = 0; i < N; i++) {
+    for (int i = 0; i < N; i++)
+    {
         printf("%d ", V[i]);
     }
     printf("\n");
@@ -18,10 +20,14 @@ int main() {
     int i = 0;
     int j = N - 1;
 
-    while (i <= j) {
-        if (V[i] < k) {
+    while (i <= j)
+    {
+        if (V[i] < k)
+        {
             i++;
-        } else {
+        }
+        else
+        {
             int temp = V[i];
             V[i] = V[j];
             V[j] = temp;
@@ -30,7 +36,8 @@ int main() {
     }
 
     printf("Vetor apos particao: ");
-    for (int x = 0; x < N; x++) {
+    for (int x = 0; x < N; x++)
+    {
         printf("%d ", V[x]);
     }
     printf("\n");

@@ -16,3 +16,4 @@ Onde isso resulta em:
 
 ```math
 T(n) = O(n · log n)
+```
