@@ -1,0 +1,3 @@
+Questão 5, Letra D:
+
+Na lista ordenada simples, a busca é $O(\log n)$, mas a inserção e remoção exigem $O(n)$. Na multilista balanceada, a busca é $O(\sqrt{n} \log n)$ e as inserções e remoções são $O(\sqrt{n})$. Na estrutura híbrida, a busca é $O(\sqrt{n})$, a remoção piora levemente para $O(\sqrt{n})$ ou $O(1)$, mas a inserção cai drasticamente para $O(1)$ amortizado.Essa estrutura híbrida seria preferível às outras duas em um cenário onde o sistema recebe rajadas de inserções massivas e contínuas (que precisam ser gravadas rapidamente com custo $O(1)$) e faz buscas ou remoções com uma frequência moderada.

@@ -1,0 +1,3 @@
+Questão 5, Letra B:
+
+O algoritmo insere o novo elemento sempre no final do buffer desordenado. Caso esse buffer atinja sua capacidade máxima (ou seja, $\sqrt{n}$ elementos), ele é ordenado e intercalado com a parte ordenada principal, esvaziando-se o buffer logo em seguida.O tempo de execução de uma única inserção no pior caso é de $O(\sqrt{n})$, que ocorre exatamente no momento em que o buffer enche e a operação de merge é disparada.O tempo amortizado por inserção é de $O(1)$. Isso acontece porque diluímos o custo pesado da operação de merge ($O(\sqrt{n})$) ao longo de todas as $\sqrt{n}$ inserções instantâneas que ocorreram no buffer antes dele encher.
